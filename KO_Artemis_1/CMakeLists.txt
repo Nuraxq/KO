@@ -10,4 +10,9 @@ add_executable(KO_Artemis_1
         Instance.cpp
         Reader.cpp
         Solution.cpp
+        EnumerationSolver.hpp
+        Solution.hpp
+        Reader.hpp
+        Instance.hpp
+        parameter_reader.hpp
 )
