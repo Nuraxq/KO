@@ -3,29 +3,28 @@
 
 vector<int> EnumerationSolver::solve(Instance& toSolve){
     Solution loesung = Solution(toSolve);
-    fast_helper(loesung,0,toSolve.n());
-    return vector<int> {count_feas,count_max,max_value};
+    backtrack(loesung,0,toSolve.n());
+    return vector<int> {numberFeasible_,numberOptimal_,optimalValue_};
 }
 
-void EnumerationSolver::fast_helper( Solution &loesung,int depth,int max) {
+void EnumerationSolver::backtrack( Solution &loesung,int depth,int max) {
     if (depth == max) {
         if(loesung.isFeasible()) {
-            if(loesung.getValue() == max_value) {
-                count_max++;
+            if(loesung.getValue() == optimalValue_) {
+                numberOptimal_++;
             }
-            if(loesung.getValue() > max_value) {
-                max_value = loesung.getValue();
-                count_max = 1;
+            if(loesung.getValue() > optimalValue_) {
+                optimalValue_ = loesung.getValue();
+                numberOptimal_ = 1;
             }
-
-            count_feas++;
+            numberFeasible_++;
         }
     }
     else {
         loesung.set(depth,0);
-        fast_helper(loesung,depth+1,max);
+        backtrack(loesung,depth+1,max);
         loesung.set(depth,1);
-        fast_helper(loesung,depth+1,max);
+        backtrack(loesung,depth+1,max);
     }
 }
 
@@ -81,9 +80,6 @@ void EnumerationSolver::solve_helper(Solution loesung, const Instance& instanz, 
     }
 }
 */
-
-
-vector<Solution> EnumerationSolver::solutions_ = {};
-int EnumerationSolver::count_feas = 0;
-int EnumerationSolver::count_max = 0;
-int EnumerationSolver::max_value = 0;
+int EnumerationSolver::numberFeasible_ = 0;
+int EnumerationSolver::numberOptimal_ = 0;
+int EnumerationSolver::optimalValue_ = 0;

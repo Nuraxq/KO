@@ -31,34 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01f7a128-5252-4f0b-88f2-b6193f649469" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/KO_Artemis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KO_Artemis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-78e6aa04cefa14aea19a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-aa67f17dfbcd44a33199.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-61b3d108377eed47045e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-15T18-54-48-0990.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Instance.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Instance.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Reader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Reader.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Solution.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Solution.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760534665215</updated>
       <workItem from="1760534666229" duration="18000" />
-      <workItem from="1760601513827" duration="1624000" />
+      <workItem from="1760601513827" duration="2424000" />
     </task>
     <servers />
   </component>
