@@ -3,10 +3,34 @@
 
 vector<int> EnumerationSolver::solve(Instance& toSolve){
     Solution loesung = Solution(toSolve);
-    solve_helper(loesung,toSolve,0);
-    return count_solution();
+    fast_helper(loesung,0,toSolve.n());
+    return vector<int> {count_feas,count_max,max_value};
 }
 
+void EnumerationSolver::fast_helper( Solution &loesung,int depth,int max) {
+    if (depth == max) {
+        if(loesung.isFeasible()) {
+            if(loesung.getValue() == max_value) {
+                count_max++;
+            }
+            if(loesung.getValue() > max_value) {
+                max_value = loesung.getValue();
+                count_max = 1;
+            }
+
+            count_feas++;
+        }
+    }
+    else {
+        loesung.set(depth,0);
+        fast_helper(loesung,depth+1,max);
+        loesung.set(depth,1);
+        fast_helper(loesung,depth+1,max);
+    }
+}
+
+
+/*
 vector<int> EnumerationSolver::count_solution()
 {
     vector<int> sol;
@@ -56,6 +80,10 @@ void EnumerationSolver::solve_helper(Solution loesung, const Instance& instanz, 
         }
     }
 }
+*/
+
 
 vector<Solution> EnumerationSolver::solutions_ = {};
-
+int EnumerationSolver::count_feas = 0;
+int EnumerationSolver::count_max = 0;
+int EnumerationSolver::max_value = 0;

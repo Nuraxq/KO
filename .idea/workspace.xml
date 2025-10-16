@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppGeneralOptions" type="string" />
   </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="KO_Artemis_1" targetName="KO_Artemis_1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f7a128-5252-4f0b-88f2-b6193f649469" name="Changes" comment="" />
+    <list default="true" id="01f7a128-5252-4f0b-88f2-b6193f649469" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/KO_Artemis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KO_Artemis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-78e6aa04cefa14aea19a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-aa67f17dfbcd44a33199.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-61b3d108377eed47045e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-15T18-54-48-0990.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/3.31.4/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Instance.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Instance.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Reader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Reader.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Solution.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/Solution.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +68,13 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="346Wn7sA5FRwlZKuhQ5zV5w4TDI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +82,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.KO_Artemis_1.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -39,11 +90,27 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/nikla/Desktop/Semester3UniOsna/Uni_KO/KO_Artemis/KO_Artemis_1",
+    "last_opened_file_path": "C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_1/CMakeLists.txt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KO_Artemis_1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="dat t $PROJECT_DIR$/KO_Artemis_1/Testinstanzen/Testinstanz3_n20" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="KO_Artemis_1" TARGET_NAME="KO_Artemis_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="KO_Artemis_1" RUN_TARGET_NAME="KO_Artemis_1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,10 +120,16 @@
       <option name="presentableId" value="Default" />
       <updated>1760534665215</updated>
       <workItem from="1760534666229" duration="18000" />
+      <workItem from="1760601513827" duration="1624000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
 </project>
