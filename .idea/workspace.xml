@@ -34,6 +34,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/EnumerationSolver.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/EnumerationSolver.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/KO_Artemis_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/KO_Artemis_1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,7 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KO_Artemis_1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="dat t $PROJECT_DIR$/KO_Artemis_1/Testinstanzen/Testinstanz3_n20" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="KO_Artemis_1" TARGET_NAME="KO_Artemis_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="KO_Artemis_1" RUN_TARGET_NAME="KO_Artemis_1">
+    <configuration name="KO_Artemis_1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="dat t $PROJECT_DIR$/KO_Artemis_1/Testinstanzen/Testinstanz5_n30" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="KO_Artemis_1" TARGET_NAME="KO_Artemis_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="KO_Artemis_1" RUN_TARGET_NAME="KO_Artemis_1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -95,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760534665215</updated>
       <workItem from="1760534666229" duration="18000" />
-      <workItem from="1760601513827" duration="2424000" />
+      <workItem from="1760601513827" duration="4590000" />
     </task>
     <servers />
   </component>
