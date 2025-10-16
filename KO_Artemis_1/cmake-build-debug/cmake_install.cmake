@@ -1,4 +1,4 @@
-# Install script for directory: C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_1
+# Install script for directory: C:/Users/nikla/Desktop/Semester3UniOsna/Uni_KO/KO_Artemis/KO_Artemis_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_1/cmake-build-debug/install_local_manifest.txt"
+  file(WRITE "C:/Users/nikla/Desktop/Semester3UniOsna/Uni_KO/KO_Artemis/KO_Artemis_1/cmake-build-debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/nikla/Desktop/Semester3UniOsna/Uni_KO/KO_Artemis/KO_Artemis_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
