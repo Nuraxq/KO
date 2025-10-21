@@ -4,20 +4,20 @@
 vector<int> EnumerationSolver::solve(Instance& toSolve){
     Solution loesung = Solution(toSolve);
     backtrack(loesung,0,toSolve.n());
-    return vector<int> {numberFeasible_,numberOptimal_,optimalValue_};
+    return vector<int> {amountFeasible_,amountOptimal_,optimalValue_};
 }
 
 void EnumerationSolver::backtrack( Solution &loesung,int depth,int max) {
     if (depth == max) {
         if(loesung.isFeasible()) {
             if(loesung.getValue() == optimalValue_) {
-                numberOptimal_++;
+                amountOptimal_++;
             }
             if(loesung.getValue() > optimalValue_) {
                 optimalValue_ = loesung.getValue();
-                numberOptimal_ = 1;
+                amountOptimal_ = 1;
             }
-            numberFeasible_++;
+            amountFeasible_++;
         }
     }
     else {
@@ -27,6 +27,6 @@ void EnumerationSolver::backtrack( Solution &loesung,int depth,int max) {
         backtrack(loesung,depth+1,max);
     }
 }
-int EnumerationSolver::numberFeasible_ = 0;
-int EnumerationSolver::numberOptimal_ = 0;
+int EnumerationSolver::amountFeasible_ = 0;
+int EnumerationSolver::amountOptimal_ = 0;
 int EnumerationSolver::optimalValue_ = 0;

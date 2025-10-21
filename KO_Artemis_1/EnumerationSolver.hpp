@@ -9,14 +9,39 @@
 
 using namespace std;
 
-// TODO: comment this class with Doxygen (and delete this comment)
+/**
+ *
+ * Solves the Knapsack Problem by Enumeration every Solution with Backtracking
+ *
+ */
 class EnumerationSolver {
-    static std::vector<Solution> solutions_;
-    static int numberOptimal_;
-    static int optimalValue_;
-    static int numberFeasible_;
-public:
-    static void backtrack(Solution& sol, int dep,int max);
+private:
 
+    /// Number of Optimal Solutions found
+    static int amountOptimal_;
+
+
+    /// The Value of the Optimal Solution(s)
+    static int optimalValue_;
+
+    /// Number of Feasible Solutions found
+    static int amountFeasible_;
+
+public:
+    /**
+     * Backtrack through every possible solution
+     *
+     * @param sol The solution object
+     * @param depth The current depth of the recursive call chain
+     * @param max The depth limit at which a Solution is Found (the number of items in the instance)
+     */
+    static void backtrack(Solution& sol, int depth,int max);
+
+    /**
+     * Solves the given Instance using the backtrack function
+     *
+     * @param toSolve The instance to solve
+     * @return Solution of the instance:  { amount Feasible, amount Optimal, Optimal Value }
+     */
     static vector<int> solve(Instance& toSolve);
 };
