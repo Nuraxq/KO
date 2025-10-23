@@ -1,6 +1,30 @@
 #include "DynamicProgramSolver.hpp"
 
+vector<int> DynamicProgramSolver::find_path(Instance& toSolve,vector<vector<int>>& matrix)
+{
+    vector<int> path(toSolve.n());
+    int y = toSolve.n();
+    int x = toSolve.getCapacity();
 
+    for(int i = toSolve.n()-1; i >= 0; i--)
+    {
+        if( matrix[y][x] == matrix[y-1][x])
+        {
+            y = y-1;
+            path[i] = 0;
+        }else
+        {
+            path[i] = 1;
+            y = y-1;
+            x = x-toSolve.getWeight(i);
+        }
+    }
+    for(int x : path)
+    {
+        std::cout << " " << x << " ";
+    }
+    return path;
+}
 
 vector<int> DynamicProgramSolver::solve(Instance& toSolve) {
     // Initialisiere Vektor in n * W größe, mit Standartwert -1 (kein Gewinn)
@@ -29,5 +53,6 @@ vector<int> DynamicProgramSolver::solve(Instance& toSolve) {
             matrix[i][j] = optimal;
         }
     }
-    return vector<int> {};
+    std::cout << matrix[kRows-1][kCols-1];
+    return find_path(toSolve,matrix);
 }

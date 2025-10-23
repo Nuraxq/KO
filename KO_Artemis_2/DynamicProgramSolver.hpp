@@ -13,4 +13,5 @@ class DynamicProgramSolver {
 
 public:
     static vector<int> solve(Instance& toSolve);
+    static vector<int> find_path(Instance& toSolve,vector<vector<int>>& matrix);
 };
