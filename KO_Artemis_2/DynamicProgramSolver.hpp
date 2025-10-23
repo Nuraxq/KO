@@ -12,6 +12,6 @@ using namespace std;
 class DynamicProgramSolver {
 
 public:
-    static vector<int> solve(Instance& toSolve);
-    static vector<int> find_path(Instance& toSolve,vector<vector<int>>& matrix);
+    static Solution solve(Instance& toSolve);
+    static Solution find_path(Instance& toSolve,vector<vector<int>>& matrix);
 };
