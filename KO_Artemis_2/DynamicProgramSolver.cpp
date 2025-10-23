@@ -1,5 +1,5 @@
 #include "DynamicProgramSolver.hpp"
-
+// wir gehen die matrix rückwärts durch und gucken ob wir ein Objekt eingepackt haben oder niicht
 vector<int> DynamicProgramSolver::find_path(Instance& toSolve,vector<vector<int>>& matrix)
 {
     vector<int> path(toSolve.n());
@@ -8,21 +8,19 @@ vector<int> DynamicProgramSolver::find_path(Instance& toSolve,vector<vector<int>
 
     for(int i = toSolve.n()-1; i >= 0; i--)
     {
+        // Objekt nicht eingepackt
         if( matrix[y][x] == matrix[y-1][x])
         {
             y = y-1;
             path[i] = 0;
-        }else
+        }else // Objekt eingepackt
         {
             path[i] = 1;
             y = y-1;
             x = x-toSolve.getWeight(i);
         }
     }
-    for(int x : path)
-    {
-        std::cout << " " << x << " ";
-    }
+
     return path;
 }
 
@@ -53,6 +51,5 @@ vector<int> DynamicProgramSolver::solve(Instance& toSolve) {
             matrix[i][j] = optimal;
         }
     }
-    std::cout << matrix[kRows-1][kCols-1];
     return find_path(toSolve,matrix);
 }
