@@ -1,33 +1,32 @@
 #include "DynamicProgramSolver.hpp"
-// wir gehen die matrix rückwärts durch und gucken ob wir ein Objekt eingepackt haben oder niicht
+// wir gehen die matrix rückwärts durch und gucken ob wir ein Objekt eingepackt haben oder nicht
 Solution DynamicProgramSolver::find_path(Instance& toSolve,vector<vector<int>>& matrix)
 {
     Solution path = Solution(toSolve);
-    int y = toSolve.n();
-    int x = toSolve.getCapacity();
+    int obj_indx = toSolve.n();
+    int weight = toSolve.getCapacity();
 
     for(int i = toSolve.n()-1; i >= 0; i--)
     {
         // Objekt nicht eingepackt
-        if( matrix[y][x] == matrix[y-1][x])
+        if( matrix[obj_indx][weight] == matrix[obj_indx-1][weight])
         {
-            y = y-1;
+            obj_indx = obj_indx-1;
             path.set(i,0);
         }else // Objekt eingepackt
         {
             path.set(i,1);
-            y = y-1;
-            x = x-toSolve.getWeight(i);
+            obj_indx = obj_indx-1;
+            weight = weight-toSolve.getWeight(i);
         }
     }
-
     return path;
 }
 
 Solution DynamicProgramSolver::solve(Instance& toSolve) {
-    // Initialisiere Vektor in n * W größe, mit Standartwert -1 (kein Gewinn)
+    // Initialisiere Vektor in n * W größe, mit Standartwert 0 (kein Gewinn)
 
-    // Rows and Cols have 0 Included
+    // Werte 0 ist mit dabei also +1
     const int kRows = toSolve.n()+1;
     const int kCols = toSolve.getCapacity() +1;
     vector<vector<int>> matrix(kRows,vector<int>(kCols,0));
