@@ -1,6 +1,6 @@
 #include "DynamicProgramSolver.hpp"
 // wir gehen die matrix rückwärts durch und gucken ob wir ein Objekt eingepackt haben oder nicht
-Solution DynamicProgramSolver::find_path(Instance& toSolve,vector<vector<int>>& matrix)
+Solution DynamicProgramSolver::find_path(Instance& toSolve,const vector<vector<int>>& matrix)
 {
     Solution path = Solution(toSolve);
     int obj_indx = toSolve.n();
@@ -38,8 +38,8 @@ Solution DynamicProgramSolver::solve(Instance& toSolve) {
             // Objekt nicht nehmen
             int optimal = matrix[i-1][j];
 
-            int current_weight = toSolve.getWeight(i-1);
-            int current_val = toSolve.getValue(i-1);
+            const int current_weight = toSolve.getWeight(i-1);
+            const int current_val = toSolve.getValue(i-1);
 
             // Test ob Objektgewicht nicht zu groß ist, sowie ob Objekt neues Maximum ermöglicht für Gewicht genau W
             if(j - current_weight >= 0 && (matrix[i-1][j- current_weight] + current_val > optimal))

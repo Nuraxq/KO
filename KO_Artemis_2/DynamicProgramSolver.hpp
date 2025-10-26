@@ -4,7 +4,6 @@
 #include "Solution.hpp"
 
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -26,7 +25,7 @@ public:
      * Findet welche Items bei der Optimalen Lösung des Rucksackproblems gewählt wurden
      * @param toSolve Instanz die gelöst werden muss
      * @param matrix Bereits ausgefüllte Matrix [i][w] mit i = Objekte und w = Gewicht
-     * @return Lösungsobjekt mit Optimaler Lösung 
+     * @return Lösungsobjekt mit Optimaler Lösung
      */
-    static Solution find_path(Instance& toSolve,vector<vector<int>>& matrix);
+    static Solution find_path(Instance& toSolve,const vector<vector<int>>& matrix);
 };
