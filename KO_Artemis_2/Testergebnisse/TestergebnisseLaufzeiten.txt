@@ -1,8 +1,8 @@
-Testinstanz1_n10 254   2.63e-05      5.97e-05
-Testinstanz2_n15 337   0.0001135      0.0020447
-Testinstanz3_n20 133   3.07e-05      0.0595929
-Testinstanz4_n20 428   8.97e-05     0.0609022
-Testinstanz5_n30 307   9.14e-05     59.3596
+Testinstanz1_n10 254   2.63e-05 5.97e-05
+Testinstanz2_n15 337   0.0001135 0.0020447
+Testinstanz3_n20 133   3.07e-05 0.0595929
+Testinstanz4_n20 428   8.97e-05 0.0609022
+Testinstanz5_n30 307   9.14e-05 59.3596
 Testinstanz6_n100 705  0.0002846
 Testinstanz7_n100 376  0.0001328
 Testinstanz8_n500 60000 0.602465
