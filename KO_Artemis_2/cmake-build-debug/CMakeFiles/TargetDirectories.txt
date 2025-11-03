@@ -1,3 +1,0 @@
-C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_2/cmake-build-debug/CMakeFiles/KO_Artemis_1.dir
-C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Sem3_Uni/KO/KO_Uebung/KO/KO_Artemis_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
