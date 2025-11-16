@@ -30,6 +30,8 @@ class SimulatedAnnealing {
         static void startSolution2(Instance& toSokve,Solution& solution);
         static void printStart(Solution& loesung);
         static void printBest(Solution& loesung);
-        static void generateRandomSol(Instance& toSolve,Solution& solution);
-
+        static void generateRandomSol(Instance& toSolve,Solution& solution,Solution& randomSol);
 };
+
+int randomInt(int x);
+double random01();
