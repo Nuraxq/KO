@@ -40,7 +40,7 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
     while(!stopCriteriaTrue) {
         // Wir generieren eine Random Loesung der Nachbarschaft
         Solution randomSol = loesung;
-        generateRandomSol(toSolve,loesung,randomSol);
+        generateRandomSol(toSolve,randomSol);
 
         int valCurrent = loesung.getValue();
         int valRandom = randomSol.getValue();
@@ -122,7 +122,7 @@ void SimulatedAnnealing::printBest(Solution& solution) {
 
 // Wir holen uns eine Zufallszahl und flippen das entsprechende Bit.
 // Wenn das Bit von 0 auf 1 geflippt wird, wird erst geguckt ob die Loesung zulaessig ist.
-void SimulatedAnnealing::generateRandomSol(Instance& toSolve,Solution& solution, Solution& randomSol) {
+void SimulatedAnnealing::generateRandomSol(Instance& toSolve, Solution& randomSol) {
     int index = randomInt(toSolve.n()-1);
 
     if(randomSol.get(index) == 1) {
