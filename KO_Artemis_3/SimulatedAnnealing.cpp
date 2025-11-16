@@ -2,24 +2,25 @@
 
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
 
-
+    // iterationen bis gekuehlt wird
     const int IterToCooling = 10* toSolve.n();
     double temperatur = starttemperature;
+    // Wir setzen currentIterationen nach dem Kuehlen zurueck
     int totalIteration = 0;
     int currentIteration = 0;
 
     // Startloesung
     Solution loesung(toSolve);
-    startSolution1(toSolve,loesung);
+    // startSolution(toSolve,loesung);
     int maxValue = loesung.getValue();
     Solution optimalSolution = loesung;
     printStart(loesung);
 
     chrono::time_point<std::chrono::high_resolution_clock> start = chrono::high_resolution_clock::now();
-    chrono::time_point<std::chrono::high_resolution_clock> current;
     bool stopCriteriaTrue = false;
 
     while(!stopCriteriaTrue) {
+        // Wir generieren eine Random Loesung der Nachbarschaft
         Solution randomSol = loesung;
         generateRandomSol(toSolve,loesung,randomSol);
 
@@ -47,28 +48,21 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
 
         // Wir vergleichen ob die Zeit in Sekunden schon abgelaufen ist.
         auto timediff = std::chrono::high_resolution_clock::now() - start;
-
-
+        // wir gucken ob die Abbruchkriterien erfuellt sind
         if((iterationlimit > 0 && totalIteration >= iterationlimit) ||
                                 (timelimit > 0 &&  timediff > std::chrono::seconds(timelimit))){
             stopCriteriaTrue = true;
         }
-
     }
+    cout << "\n" << totalIteration << "\n";
+    printBest(optimalSolution);
 }
 
-// Wir gehen einmal durch und nehmen das Objekt wenn es noch reinpasst
-void SimulatedAnnealing::startSolution1(Instance& toSolve, Solution& solution) {
-    for(int i = 0; i < toSolve.n(); i++) {
-        if(toSolve.getWeight(i) <= (toSolve.getCapacity() - solution.getWeight())) {
-            solution.set(i,1);
-        }
-    }
-}
 
 
 // Wir nehmen nach Greedy Wahl die Objekte
-void SimulatedAnnealing::startSolution2(Instance& toSolve,Solution& solution) {
+
+void SimulatedAnnealing::startSolution(Instance& toSolve,Solution& solution) {
     for(int i = 0; i < toSolve.n(); i++) {
         double highest = 0.0;
         int index_highest = -1;
