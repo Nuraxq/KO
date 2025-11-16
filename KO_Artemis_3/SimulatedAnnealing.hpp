@@ -12,24 +12,21 @@
 
 using namespace std;
 
-/*
- * Idee: 2 Funktionen um Startloesung zu generieren -> z.b.
- * Greedy und einfach Random oder einf die ersten Elemente nehmen bis nix geht
- *  Dann: zufaellige Nachbarschaftsloesung nehmen und erzeugen, indem 1 Bit geflippt wird.
- *
+
+/**
+ * Sucht eine Loesung des Binaeren Rucksackproblems mithilfe von Simulated Annealing
+ * Generiert dafuer zufaellige Loesungen
+ * Es koennen sowohl die Zeit als auch die Iterationsanzahl als Abbruchkriterium dienen.
  */
-
-
-// TODO: comment this class with Doxygen (and delete this comment)
 class SimulatedAnnealing {
 public:
     /**
-    *
-    * @param toSolve
-    * @param timelimit
-    * @param iterationlimit
-    * @param starttemperature
-    * @param factor
+    *  Sucht eine moeglichst gute Loesung fuer das Binare Rucksackproblem
+    * @param toSolve Instanz die geloest werden muss
+    * @param timelimit Zeitlimit fuers berechnen
+    * @param iterationlimit Iterationslimit
+    * @param starttemperature Starttemperatur
+    * @param factor Startfaktor
     */
     static void solve(Instance &toSolve, int timelimit, int iterationlimit, double starttemperature, double factor);
 
@@ -61,6 +58,15 @@ public:
     static void generateRandomSol(Instance &toSolve, Solution &randomSol);
 };
 
+/**
+ * Gibt einen zufaelligen Int aus im Intervall 0-x (inkl x)
+ * @param x obere Intervallsgrenze
+ * @return die generierte Zufallszahl
+ */
 int randomInt(int x);
 
+/**
+ * Gibt eine zufaellige Zahl im Intervall 0-1 aus
+ * @return die generierte Zufallszahl
+ */
 double random01();
