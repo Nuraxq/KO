@@ -1,5 +1,14 @@
 #include "SimulatedAnnealing.hpp"
 
+// TODO: Code verschnellern, -> bei n = 5000 Arsch langsam
+// TODO: Kommentare mit Doxygen
+// TODO: Funktionalitäten kontrollieren (ist alles da?)
+// TODO: Instanzen Testen und eingeben
+// TODO: Kuehlugsweise ueberarbeiten (passt die Iterationenzahl und -> welche 2 Arten sind gewollt?)
+// TODO: Testen + bei Artemis hochladen
+
+
+
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
 
     // iterationen bis gekuehlt wird
@@ -11,9 +20,18 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
 
     // Startloesung
     Solution loesung(toSolve);
+
+    /*
+     *Auskommentiert lassen falls mit 0 Vektor gestartet werden soll
+     * Funktion würde sonst mit Greedy Loesung starten
+     */
+
     // startSolution(toSolve,loesung);
+
+    // Wir speichern die beste gesehene Loesung
     int maxValue = loesung.getValue();
     Solution optimalSolution = loesung;
+
     printStart(loesung);
 
     chrono::time_point<std::chrono::high_resolution_clock> start = chrono::high_resolution_clock::now();
@@ -54,7 +72,6 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
             stopCriteriaTrue = true;
         }
     }
-    cout << "\n" << totalIteration << "\n";
     printBest(optimalSolution);
 }
 
