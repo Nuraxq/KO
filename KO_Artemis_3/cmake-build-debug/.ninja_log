@@ -1,0 +1,19 @@
+# ninja log v6
+5	750	7850129639317525	CMakeFiles/KO_Artemis_3.dir/Instance.cpp.obj	a61a1c3aff685807
+32	910	7850129639588604	CMakeFiles/KO_Artemis_3.dir/Solution.cpp.obj	122e35326201447b
+13	1241	7850129639401265	CMakeFiles/KO_Artemis_3.dir/main.cpp.obj	d2c1a8fe3ff802c5
+25	1066	7850129639518559	CMakeFiles/KO_Artemis_3.dir/SimulatedAnnealing.cpp.obj	39db7b11f74a8a92
+27	425	7850129800846019	build.ninja	26c9ebe40dfa424c
+37	583	7850129802516021	CMakeFiles/KO_Artemis_3.dir/Instance.cpp.obj	e1ca71aa78c6bc74
+61	761	7850129802755824	CMakeFiles/KO_Artemis_3.dir/Solution.cpp.obj	b1ae4c860c4cb946
+49	1089	7850129802640876	CMakeFiles/KO_Artemis_3.dir/Reader.cpp.obj	2c008a86574738b4
+55	1247	7850129802690904	CMakeFiles/KO_Artemis_3.dir/SimulatedAnnealing.cpp.obj	c30d49819f1f7ce
+42	1333	7850129802570876	CMakeFiles/KO_Artemis_3.dir/main.cpp.obj	4bf548442e27b477
+1333	1607	7850129815476067	KO_Artemis_3.exe	c36f75e038f2f4ce
+162	2638	7850167088087015	CMakeFiles/KO_Artemis_3.dir/SimulatedAnnealing.cpp.obj	c30d49819f1f7ce
+141	2767	7850167087880013	CMakeFiles/KO_Artemis_3.dir/main.cpp.obj	4bf548442e27b477
+2767	3665	7850167114132117	KO_Artemis_3.exe	c36f75e038f2f4ce
+19	1642	7850171678117994	CMakeFiles/KO_Artemis_3.dir/SimulatedAnnealing.cpp.obj	c30d49819f1f7ce
+1643	1915	7850171694355666	KO_Artemis_3.exe	c36f75e038f2f4ce
+57	1665	7850171786191302	CMakeFiles/KO_Artemis_3.dir/SimulatedAnnealing.cpp.obj	c30d49819f1f7ce
+1666	1929	7850171802281477	KO_Artemis_3.exe	c36f75e038f2f4ce

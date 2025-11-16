@@ -1,0 +1,15 @@
+cmake-build-*/
+
+.vscode/
+.idea/
+
+!*.h
+!*.c
+!*.cpp
+!*.hpp
+!*.sh
+!Makefile
+!.gitignore
+!.gitattributes
+
+!*/
