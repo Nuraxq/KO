@@ -1,0 +1,20 @@
+Testinstanz1_n10 | 254 2.63e-05 | 254 5.00346 | 254 0.0098708 | 254 5.00233 | 254 0.0109086 | 254 5.00202 | 254 0.0135238 | 254  5.00237 | 254 0.0101317 
+Testinstanz2_n15 | 337 0.0001135 | 337 5.003 |
+Testinstanz3_n20 | 133 3.07e-05 | 133 5.00334 | 
+Testinstanz4_n20 | 428 8.97e-05 | 428 5.004 | 
+Testinstanz5_n30 | 307 9.14e-05 | 288 5.00435 | 
+Testinstanz6_n100 | 705 0.0002846 | 673 5.01333 | 
+Testinstanz7_n100 | 376 0.0001328 | 376 5.01352 | 
+Testinstanz8_n500 | 60000 0.602465 | 60000 5.06267 | 
+Testinstanz9_n1000 | 1199 0.0011966 | 947 5.13157 | 
+Testinstanz10_n5000 | 35066 0.0756332| 21289 5.61066 |
+
+
+Konfiguration 1: Alle Werte 0 x Alle n-Iterationen um 0.95 Starttemp 10000  x 5 Sekunden Laufzeit
+Konfiguration 2: Alle Werte 0 x Alle n-Iterationen um 0.95 Starttemp 10000  x 100*n Iterationen
+Konfiguration 3: Alle Werte 0 x Alle 2n-Iterationen um 0.95 Starttemp 10000 x 5 Sekunden Laufzeit
+Konfiguration 4: Alle Werte 0 x Alle 2n-Iterationen um 0.95 Starttemp 10000 x 100*n Iterationen
+Konfiguration 5: Greedy Start x Alle n-Iterationen um 0.95 Starttemp 10000  x 5 Sekunden Laufzeit
+Konfiguration 6: Greedy Start x Alle n-Iterationen um 0.95 Starttemp 10000  x 100*n Iterationen
+Konfiguration 7: Greedy Start x Alle 2n-Iterationen um 0.95 Starttemp 10000 x 5 Sekunden Laufzeit
+Konfiguration 8: Greedy Start x Alle 2n-Iterationen um 0.95 Starttemp 10000 x 100*n Iterationen

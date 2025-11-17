@@ -3,9 +3,13 @@
 
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
 
-    bool greedyStart = true;
+
+    // Startwerte für Verschiedene Konfigurationen
     // iterationen bis gekuehlt wird
-    const int IterToCooling = toSolve.n();
+    const int IterToCooling = toSolve.n()*2;
+    bool greedyStart = true;
+
+
     double temperatur = starttemperature;
     // Wir setzen currentIterationen nach dem Kuehlen zurueck
     int totalIteration = 0;

@@ -19,9 +19,8 @@ using namespace std;
  * Es koennen sowohl die Zeit als auch die Iterationsanzahl als Abbruchkriterium dienen.
  */
 class SimulatedAnnealing {
-
 public:
-    /**
+    /**+++++++++++++
     *  Sucht eine moeglichst gute Loesung fuer das Binare Rucksackproblem
     * @param toSolve Instanz die geloest werden muss
     * @param timelimit Zeitlimit fuers berechnen
