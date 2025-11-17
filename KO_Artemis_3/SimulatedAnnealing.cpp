@@ -1,43 +1,24 @@
 #include "SimulatedAnnealing.hpp"
 
 
-// TODO: Funktionalitäten kontrollieren (ist alles da?)
-// TODO: Instanzen Testen und eingeben
-// TODO: Kuehlugsweise ueberarbeiten (passt die Iterationenzahl und -> welche 2 Arten sind gewollt?)
-// TODO: Testen + bei Artemis hochladen
-// TODO: Zuweisung verschnellern -> keine Instanz Kopie!!!! Für Loesungsobjekt bzw testen ob es langsam ist
-// Todo: algo ist kacke bei großen n da wenig werte auf 1 gesetzt sind und diese erst auf 0 gesetzt werden müssen für neue Lösung --> überlegen
-
-
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
-    bool greedyStart = false;
+
+    bool greedyStart = true;
     // iterationen bis gekuehlt wird
     const int IterToCooling = toSolve.n();
     double temperatur = starttemperature;
     // Wir setzen currentIterationen nach dem Kuehlen zurueck
     int totalIteration = 0;
     int currentIteration = 0;
-
     // Startloesung
     Solution loesung(toSolve);
-
-        
-    /*
-    inside = getInside(loesung);
-    fitting = getFitting(loesung);
-    */
-
     //Funktion  wird  mit Greedy Loesung starten
-    if(greedyStart) {
-        startSolution(toSolve,loesung);
-    }
+    if(greedyStart) {startSolution(toSolve,loesung);}
 
     // Wir speichern die beste gesehene Loesung
     int maxValue = loesung.getValue();
     Solution optimalSolution = loesung;
-
     printStart(loesung);
-
     chrono::time_point<std::chrono::high_resolution_clock> start = chrono::high_resolution_clock::now();
     bool stopCriteriaTrue = false;
 
@@ -106,22 +87,20 @@ void SimulatedAnnealing::startSolution(Instance& toSolve,Solution& solution) {
 
 // Startloesung ausgeben im angegebenen Format
 void SimulatedAnnealing::printStart(Solution& solution) {
-    cout << "Startloesung mit Zielfunktionswert " << solution.getValue() << ":\n (";
+    cout << "Startloesung mit Zielfunktionswert " << solution.getValue() << ":\n";
     for(int i = 0; i < solution.getInstance().n() -1; i++) {
         cout << solution.get(i) << " ";
     }
-    cout << solution.get(solution.getInstance().n() -1);
-    cout << ")\n";
+    cout << solution.get(solution.getInstance().n() -1) << "\n";
 }
 
 // Beste Loesung ausgeben im angegebenen Format
 void SimulatedAnnealing::printBest(Solution& solution) {
-    cout << "beste gefundene Loesung mit Zielfunktionswert " << solution.getValue() << ":\n (";
+    cout << "beste gefundene Loesung mit Zielfunktionswert " << solution.getValue() << ":\n";
     for(int i = 0; i < solution.getInstance().n()-1; i++) {
         cout << solution.get(i) << " ";
     }
-    cout << solution.get(solution.getInstance().n() -1);
-    cout << ")\n";
+    cout << solution.get(solution.getInstance().n() -1) << "\n";
 }
 
 // Wir holen uns eine Zufallszahl und flippen das entsprechende Bit.
@@ -142,30 +121,6 @@ void SimulatedAnnealing::generateRandomSol(Instance& toSolve, Solution& randomSo
     }
 }
 
-
-// Wir wollen laufzeit sparen, wir gucken wie viele Objekte noch in den Rucksack passen
-// Wir kriegen die indizes der passenden Objekte zurück
-vector<int> SimulatedAnnealing::getFitting(Solution& sol) {
-    vector<int> fitting;
-    int spaceLeft = sol.getInstance().getCapacity() - sol.getWeight();
-    for(int i = 0; i < sol.getInstance().n(); i++ ){
-        if(sol.getInstance().getWeight(i) <= spaceLeft) {
-            fitting.push_back(i);
-        }
-    }
-    return fitting;
-}
-
-vector<int> SimulatedAnnealing::getInside(Solution& sol) {
-    vector<int> inside;
-    for(int i = 0; i < sol.getInstance().n(); i++ ) {
-        if(sol.get(i) == 1) {
-            inside.push_back(i);
-        }
-    }
-    return inside;
-}
-
 // Zufaellige Zahl generieren
 int randomInt(int x) {
     static std::random_device rd;
@@ -181,3 +136,4 @@ double random01() {
     static std::uniform_real_distribution<> dist(0.0, 1.0);
     return dist(gen);
 }
+
