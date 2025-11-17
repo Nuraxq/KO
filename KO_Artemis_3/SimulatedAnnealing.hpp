@@ -19,6 +19,10 @@ using namespace std;
  * Es koennen sowohl die Zeit als auch die Iterationsanzahl als Abbruchkriterium dienen.
  */
 class SimulatedAnnealing {
+
+private:
+     static vector<int> inside;
+     static vector<int> fitting;
 public:
     /**
     *  Sucht eine moeglichst gute Loesung fuer das Binare Rucksackproblem
@@ -56,6 +60,21 @@ public:
      * @param randomSol Loesung die Modifiziert wird
      */
     static void generateRandomSol(Instance &toSolve, Solution &randomSol);
+
+    /**
+     * Gibt Indizies der Items zurueck die noch in den Rucksack passen
+     * @param sol Loesung die ueberprueft wird
+     * @return Vektor mit Indizes der passenden Items
+     */
+    static vector<int> getFitting(Solution& sol);
+
+    /**
+     * Gibt Indizes der Items zurueck die bereits gewaehlt sind.
+     * @param sol Loesung die Kontrolliert wird
+     * @return Vektor an Indizes der Items im Rucksack
+     */
+    static vector<int> getInside(Solution& sol);
+
 };
 
 /**

@@ -1,18 +1,18 @@
 #include "SimulatedAnnealing.hpp"
 
-// TODO: Code verschnellern, -> bei n = 5000 Arsch langsam
+
 // TODO: Funktionalitäten kontrollieren (ist alles da?)
 // TODO: Instanzen Testen und eingeben
 // TODO: Kuehlugsweise ueberarbeiten (passt die Iterationenzahl und -> welche 2 Arten sind gewollt?)
 // TODO: Testen + bei Artemis hochladen
-// TODO: gucken ob bei Printbest -1 noetig
-
+// TODO: Zuweisung verschnellern -> keine Instanz Kopie!!!! Für Loesungsobjekt bzw testen ob es langsam ist
+// Todo: algo ist kacke bei großen n da wenig werte auf 1 gesetzt sind und diese erst auf 0 gesetzt werden müssen für neue Lösung --> überlegen
 
 
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
-
+    bool greedyStart = false;
     // iterationen bis gekuehlt wird
-    const int IterToCooling = 10* toSolve.n();
+    const int IterToCooling = toSolve.n();
     double temperatur = starttemperature;
     // Wir setzen currentIterationen nach dem Kuehlen zurueck
     int totalIteration = 0;
@@ -21,11 +21,16 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
     // Startloesung
     Solution loesung(toSolve);
 
+        
+    /*
+    inside = getInside(loesung);
+    fitting = getFitting(loesung);
+    */
 
-    // Auskommentiert lassen falls mit 0 Vektor gestartet werden soll
-    //Funktion würde sonst mit Greedy Loesung starten
-
-    //-----> startSolution(toSolve,loesung);
+    //Funktion  wird  mit Greedy Loesung starten
+    if(greedyStart) {
+        startSolution(toSolve,loesung);
+    }
 
     // Wir speichern die beste gesehene Loesung
     int maxValue = loesung.getValue();
@@ -44,7 +49,8 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
         int valCurrent = loesung.getValue();
         int valRandom = randomSol.getValue();
 
-        double chance = exp(-(valRandom-valCurrent)/temperatur);
+        // Kein minus da nur nach chance überprüft wird wenn valRandom < valCurrent
+        double chance = exp((valRandom-valCurrent)/temperatur);
 
         // Wir gucken ob die zufaellige Loesung besser ist oder ob sie zufaellig genommen werden soll
         if(valRandom > valCurrent || random01() < chance ) {
@@ -71,10 +77,10 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
             stopCriteriaTrue = true;
         }
     }
+    cout << "Temp: " << temperatur <<endl;
+    cout << "Iterationen: " << totalIteration << endl;
     printBest(optimalSolution);
 }
-
-
 
 // Wir nehmen nach Greedy Wahl die Objekte
 void SimulatedAnnealing::startSolution(Instance& toSolve,Solution& solution) {
@@ -87,7 +93,7 @@ void SimulatedAnnealing::startSolution(Instance& toSolve,Solution& solution) {
 
             // Wir nehmen ein Objekt wenn es
             // 1. Noch nicht drin ist && 2. Größeren Val/Gewicht hat && 3.den Rucksack nicht überfüllt
-            if(solution.get(j) == false && value  > highest && (toSolve.getCapacity() - solution.getWeight() >=  toSolve.getValue(j))) {
+            if(solution.get(j) == false && value  > highest && (toSolve.getCapacity() - solution.getWeight() >=  toSolve.getWeight(j))) {
                 highest = value;
                 indexHighest = j;
             }
@@ -97,7 +103,6 @@ void SimulatedAnnealing::startSolution(Instance& toSolve,Solution& solution) {
         solution.set(indexHighest,1);
     }
 }
-
 
 // Startloesung ausgeben im angegebenen Format
 void SimulatedAnnealing::printStart(Solution& solution) {
@@ -119,22 +124,47 @@ void SimulatedAnnealing::printBest(Solution& solution) {
     cout << ")\n";
 }
 
-
 // Wir holen uns eine Zufallszahl und flippen das entsprechende Bit.
 // Wenn das Bit von 0 auf 1 geflippt wird, wird erst geguckt ob die Loesung zulaessig ist.
 void SimulatedAnnealing::generateRandomSol(Instance& toSolve, Solution& randomSol) {
-    int index = randomInt(toSolve.n()-1);
-
-    if(randomSol.get(index) == 1) {
-        randomSol.set(index,0);
-    }
-    else {
-        if(randomSol.getWeight() + toSolve.getWeight(index) <= toSolve.getCapacity()) {
-            randomSol.set(index,1);
+    while(true) {
+        int index = randomInt(toSolve.n()-1);
+        if(randomSol.get(index) == 1) {
+            randomSol.set(index,0);
+            return;
+        }
+        else {
+            if(randomSol.getWeight() + toSolve.getWeight(index) <= toSolve.getCapacity()) {
+                randomSol.set(index,1);
+                return;
+            }
         }
     }
 }
 
+
+// Wir wollen laufzeit sparen, wir gucken wie viele Objekte noch in den Rucksack passen
+// Wir kriegen die indizes der passenden Objekte zurück
+vector<int> SimulatedAnnealing::getFitting(Solution& sol) {
+    vector<int> fitting;
+    int spaceLeft = sol.getInstance().getCapacity() - sol.getWeight();
+    for(int i = 0; i < sol.getInstance().n(); i++ ){
+        if(sol.getInstance().getWeight(i) <= spaceLeft) {
+            fitting.push_back(i);
+        }
+    }
+    return fitting;
+}
+
+vector<int> SimulatedAnnealing::getInside(Solution& sol) {
+    vector<int> inside;
+    for(int i = 0; i < sol.getInstance().n(); i++ ) {
+        if(sol.get(i) == 1) {
+            inside.push_back(i);
+        }
+    }
+    return inside;
+}
 
 // Zufaellige Zahl generieren
 int randomInt(int x) {
