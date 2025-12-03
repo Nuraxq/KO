@@ -3,12 +3,10 @@
 
 void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationlimit, double starttemperature, double factor) {
 
-
     // Startwerte für Verschiedene Konfigurationen
     // iterationen bis gekuehlt wird
     const int IterToCooling = toSolve.n()*2;
-    bool greedyStart = true;
-
+    bool greedyStart = false;
 
     double temperatur = starttemperature;
     // Wir setzen currentIterationen nach dem Kuehlen zurueck
@@ -22,6 +20,7 @@ void SimulatedAnnealing::solve(Instance& toSolve, int timelimit, int iterationli
     // Wir speichern die beste gesehene Loesung
     int maxValue = loesung.getValue();
     Solution optimalSolution = loesung;
+
     printStart(loesung);
     chrono::time_point<std::chrono::high_resolution_clock> start = chrono::high_resolution_clock::now();
     bool stopCriteriaTrue = false;
